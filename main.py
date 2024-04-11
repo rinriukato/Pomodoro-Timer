@@ -41,7 +41,7 @@ def start_timer():
     if reps % 2 != 0:
         count_down(work_secs)
         timer_label.config(text="Work Time!", fg=GREEN)
-    elif reps == 8:
+    elif reps % 8 == 0:
         count_down(long_break_sec)
         timer_label.config(text="Long Break Time!", fg=RED)
     else:
